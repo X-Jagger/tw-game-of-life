@@ -1,0 +1,26 @@
+{
+  "name": "tdd-kata-js",
+  "version": "1.0.0",
+  "description": "TDD Kata in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter mochawesome --compilers js:babel-core/register --reporter mochawesome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WowCoach/tdd-kata-js.git"
+  },
+  "author": "Waterstrong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WowCoach/tdd-kata-js/issues"
+  },
+  "homepage": "https://github.com/WowCoach/tdd-kata-js#readme",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-preset-es2015": "^6.22.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "mochawesome": "^2.0.3"
+  }
+}
