@@ -1,5 +1,4 @@
 var path = require('path');
-var HotModuleReplacementPlugin = require('webpack').HotModuleReplacementPlugin;
 var HtmlwebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -22,8 +21,7 @@ module.exports = {
     new HtmlwebpackPlugin({
       title: "game of life",
       template: "./index.html"
-    }),
-    new HotModuleReplacementPlugin()
+    })
   ]
 };
 
