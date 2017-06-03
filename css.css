@@ -1,0 +1,26 @@
+#myCanvas{
+	width: 800px;
+	height: 300px;
+}
+
+.container{
+	width: 800px;
+	height: 300px;
+	background-color: #999;
+}
+
+.item{
+	width: 20px;
+	height: 20px;
+	float: left;
+	background-color: white;
+	border: 1px solid black;
+	
+}
+
+.active{
+	background-color: yellow;
+}
+button{
+	float: left;
+}

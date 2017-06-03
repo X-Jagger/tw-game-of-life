@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="css.css">
 </head>
+
 <body>
 <h2>Conway's Game of Life</h2>
-<div id="app-container"></div>
-<script src="/dist/bundle.js"></script>
+
+<div id="app-container"><canvas id="myCanvas"></canvas>
+   
+<div class="container">
+</div>
+
+<button class = "start-btn">start</button></div>
+<button class = "stop-btn">stop</button></div>
+<script src="./dist/bundle.js"></script>
+<script  src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="handle.js"></script>
 </body>
 </html>

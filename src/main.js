@@ -1,6 +1,4 @@
-
-
-const square = (arr) => {
+function square(arr) {
   //console.log(_.range(0, n));
 var countArr = [];
 for (var i = 0; i < arr.length; i++) {
@@ -57,9 +55,6 @@ function vertify(x,y){
 return countArr;
 
 };
-
-
-
-module.exports = {
-  square:square
+module.exports =  {
+  square
 };
