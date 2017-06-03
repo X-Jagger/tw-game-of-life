@@ -8,7 +8,6 @@ for (var i = 0; i < arr.length; i++) {
 		vertify(i,j);
 	};
 };
-console.log(countArr);
 function vertify(x,y){
   	var count = 0;
   	if(arr[x-1]){
@@ -52,8 +51,6 @@ function vertify(x,y){
   		countArr.push(arr[x][y]);
 
   	}  	  	
-	 return countArr;
-
 }
 
 
