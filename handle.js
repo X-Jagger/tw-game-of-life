@@ -128,4 +128,3 @@
 		var getResultArr = square(dataArr);
 		handleResult(getResultArr);
 	}
-}()
