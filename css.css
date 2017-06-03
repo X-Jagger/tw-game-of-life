@@ -1,11 +1,7 @@
-#myCanvas{
-	width: 800px;
-	height: 300px;
-}
 
 .container{
-	width: 800px;
-	height: 300px;
+	width: 1200px;
+	height: 600px;
 	background-color: #999;
 }
 
@@ -22,5 +18,34 @@
 	background-color: yellow;
 }
 button{
-	float: left;
+	position:absolute;
+
+}
+.stop-btn{
+	width: 100px;
+	height: 50px;
+	top: 200px;
+	right: 200px;
+}
+.start-btn{
+	width: 100px;
+	height: 50px;	
+	top: 130px;
+	right: 200px;
+}
+.fast-btn{
+	width: 50px;
+	height: 25px;	
+	top: 280px;
+	right: 250px;
+}
+.slow-btn{
+	width: 50px;
+	height: 25px;	
+	top: 280px;
+	right: 200px;
+}
+
+footer{
+	text-align: center;
 }

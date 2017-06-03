@@ -56,7 +56,7 @@ return countArr;
 
 };
 
-var len = 450;
+var len = 1458;
 for(var i = 0; i < len ; i++){
 	$(".container").append('<div class="item" data-val="0"></div>');
 }
@@ -83,8 +83,9 @@ $(".item").click(function(){
 	// $(this).toggleClass("active");
 });
 var time;
+var speed = 500;
 $(".start-btn").click(function(){
-	time = setInterval(go,500);
+	time = setInterval(go,speed);
 	
 });
 
@@ -92,6 +93,17 @@ $(".stop-btn").click(function(){
 	clearInterval(time);
 	
 });
+$(".fast-btn").click(function(){
+	speed = 50;
+	clearInterval(time);
+	time = setInterval(go,speed);
+});
+$(".slow-btn").click(function(){
+	speed = 800;
+	clearInterval(time);
+	time = setInterval(go,speed);
+});
+
 
 function getDataArr(){
 	dataArr = [];
