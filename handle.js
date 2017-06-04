@@ -12,6 +12,7 @@
 	var numY = Math.floor(mainHeight/(itemSize+2));
 	var dataArr = [];//用来装现在点的状态arr
 
+	
 	//切换点的状态（颜色 生命）
 	$(".item").click(function(){
 		if($(this).attr("data-val") == 0){
@@ -72,7 +73,7 @@
 	}
 
 	//计算每个点应有的状态 live or die，得到countArr
-	function square(arr) {
+	function computed(arr) {
 		var countArr = [];
 		for (var i = 0; i < arr.length; i++) {
 			for (var j = 0; j < arr[i].length; j++) {
@@ -125,7 +126,7 @@
 
 	function go(){
 		getDataArr();
-		var getResultArr = square(dataArr);
+		var getResultArr = computed(dataArr);
 		handleResult(getResultArr);
 	}
 })()
