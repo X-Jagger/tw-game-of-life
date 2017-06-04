@@ -128,4 +128,7 @@
 		var getResultArr = square(dataArr);
 		handleResult(getResultArr);
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 21bde96191bfcc37be7fa7cff279ad5a8e580c31
