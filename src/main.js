@@ -1,5 +1,4 @@
 function computed(arr) {
-  //console.log(_.range(0, n));
 var countArr = [];
 for (var i = 0; i < arr.length; i++) {
 	for (var j = 0; j < arr[i].length; j++) {

@@ -31,20 +31,36 @@
 		intervalID  = setInterval(go,speed);
 		
 	});
-
 	$(".stop-btn").click(function(){
-		clearInterval(intervalID );
-		
+		clearInterval(intervalID);
 	});
 	$(".fast-btn").click(function(){
 		speed = 50;
-		clearInterval(intervalID );
+		clearInterval(intervalID);
 		intervalID  = setInterval(go,speed);
 	});
 	$(".slow-btn").click(function(){
 		speed = 800	;
-		clearInterval(intervalID );
+		clearInterval(intervalID);
 		intervalID  = setInterval(go,speed);
+	});
+	$(".clear-btn").click(function(){
+		$(".item").removeClass("active");
+		$(".item").attr("data-val","0");
+		clearInterval(intervalID);
+	});
+	$(".random-btn").click(function(){
+		clearInterval(intervalID);
+		for(var i=0;i < $(".item").length;i++){
+			if(Math.round(Math.random()) == 0){
+				$(".item").eq(i).attr("data-val","0");
+				$(".item").eq(i).removeClass("active");
+			}else{
+				$(".item").eq(i).attr("data-val","1");
+				$(".item").eq(i).addClass("active");				
+			}
+			
+		}
 	});
 
 	//获得当前点的状态
@@ -86,7 +102,7 @@
 		  	if(arr[x-1]){
 		  		if(arr[x-1][y-1] == 1){
 		  			count++ ;
-		  		}
+		  			}
 			  	if(arr[x-1][y] == 1){
 			  		count++ ;
 			  	}
@@ -123,6 +139,7 @@
 		}
 			return countArr;
 	};
+
 
 	function go(){
 		getDataArr();

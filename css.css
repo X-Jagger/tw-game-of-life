@@ -2,7 +2,7 @@
 .container{
 	width: 1200px;
 	height: 600px;
-	background-color: #999;
+	/*background-color: #999;*/
 }
 
 .item{
@@ -33,6 +33,12 @@ button{
 	top: 130px;
 	right: 200px;
 }
+.clear-btn{
+	width: 100px;
+	height: 50px;	
+	top: 330px;
+	right: 200px;	
+}
 .fast-btn{
 	width: 50px;
 	height: 25px;	
@@ -45,7 +51,12 @@ button{
 	top: 280px;
 	right: 200px;
 }
-
+.random-btn{
+	width: 100px;
+	height: 50px;	
+	top: 400px;
+	right: 200px;	
+}
 footer{
 	text-align: center;
 }
