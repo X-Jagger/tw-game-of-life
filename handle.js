@@ -1,4 +1,4 @@
-
+(function(){
 	//放方块Dom
 	var len = 1458;
 	for(var i = 0; i < len ; i++){
@@ -128,4 +128,4 @@
 		var getResultArr = square(dataArr);
 		handleResult(getResultArr);
 	}
-
+})()
