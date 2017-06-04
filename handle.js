@@ -1,4 +1,4 @@
-(function){
+
 	//放方块Dom
 	var len = 1458;
 	for(var i = 0; i < len ; i++){
@@ -16,11 +16,11 @@
 	$(".item").click(function(){
 		if($(this).attr("data-val") == 0){
 			$(this).attr("data-val","1");
-			$(this).attr("class","item active");
+			$(this).addClass("active");
 		}else{
 			
 			$(this).attr("data-val","0");
-			$(this).attr("class","item");
+			$(this).removeClass("active");
 		}
 	});
 
@@ -41,7 +41,7 @@
 		intervalID  = setInterval(go,speed);
 	});
 	$(".slow-btn").click(function(){
-		speed = 800;
+		speed = 800	;
 		clearInterval(intervalID );
 		intervalID  = setInterval(go,speed);
 	});
@@ -59,14 +59,14 @@
 	}
 	//传入所有点，处理并渲染
 	function handleResult(arr){
-		$(".item").attr("class","item");
+		$(".item").removeClass("active");
 		$('.item').attr("data-val","0");
 		for(var i=0; i<arr.length; i++){
 			if(arr[i] === "1"){
-				$(".item").eq(i).attr("class","item active");
+				$(".item").eq(i).addClass("active");
 				$(".item").eq(i).attr("data-val","1");
 			}else{
-				$(".item").eq(i).attr("class","item");
+				$(".item").eq(i).removeClass("active");
 			}
 		}
 	}
@@ -128,4 +128,4 @@
 		var getResultArr = square(dataArr);
 		handleResult(getResultArr);
 	}
-}()
+
