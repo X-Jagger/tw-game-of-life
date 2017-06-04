@@ -19,7 +19,6 @@
 			$(this).attr("data-val","1");
 			$(this).addClass("active");
 		}else{
-			
 			$(this).attr("data-val","0");
 			$(this).removeClass("active");
 		}

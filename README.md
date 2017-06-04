@@ -1,1 +1,1 @@
-# tdd-kata-js[http://codingdojo.org/kata/FizzBuzz/](http://codingdojo.org/kata/FizzBuzz/)## Get StartedMake sure you installed Node```npm install  # install dependenciesnpm test  # only run testsnpm run report  # run tests and generate the report```To checkout the test report: open `mochawesome-reports/mochawesome.html`[Chai Assertion Library](http://chaijs.com/)
+# tdd-kata-js《Game of life》To play:[https://x-jagger.github.io/tw-true/](https://x-jagger.github.io/tw-true/)## Get Started
