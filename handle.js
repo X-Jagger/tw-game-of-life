@@ -8,8 +8,8 @@
 	var mainHeight = $(".container").height();
 	var mainWidth = $(".container").width();
 	var itemSize = $(".item").width();
-	var col = Math.floor(mainWidth/(itemSize+2));
-	var row = Math.floor(mainHeight/(itemSize+2));
+	var numX = Math.floor(mainWidth/(itemSize+2));
+	var numY = Math.floor(mainHeight/(itemSize+2));
 	var dataArr = [];//用来装现在点的状态arr
 
 	//切换点的状态（颜色 生命）
@@ -49,10 +49,10 @@
 	//获得当前点的状态
 	function getDataArr(){
 		dataArr = [];
-		for (var i = 0; i < row; i++) {
+		for (var i = 0; i < numY; i++) {
 			var tempArr = [];
-			for (var j = 0; j < col; j++) {
-				tempArr.push($(".item").eq(i*col + j).attr("data-val"));
+			for (var j = 0; j < numX; j++) {
+				tempArr.push($(".item").eq(i*numX + j).attr("data-val"));
 			};
 			dataArr[i] = tempArr;
 		};
@@ -128,7 +128,4 @@
 		var getResultArr = square(dataArr);
 		handleResult(getResultArr);
 	}
-<<<<<<< HEAD
 
-=======
->>>>>>> 21bde96191bfcc37be7fa7cff279ad5a8e580c31
