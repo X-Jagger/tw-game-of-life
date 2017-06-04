@@ -8,8 +8,8 @@
 	var mainHeight = $(".container").height();
 	var mainWidth = $(".container").width();
 	var itemSize = $(".item").width();
-	var numX = Math.floor(mainWidth/(itemSize+2));
-	var numY = Math.floor(mainHeight/(itemSize+2));
+	var numX = Math.floor(mainWidth/(itemSize+2));//开始是col
+	var numY = Math.floor(mainHeight/(itemSize+2));//开始是row
 	var dataArr = [];//用来装现在点的状态arr
 
 	

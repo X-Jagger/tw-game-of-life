@@ -1,24 +1,24 @@
 import {expect} from 'chai';
-import  {square} from '../src/main';
+import  {computed} from '../src/main';
 
 describe('computed', () => {
-  it('should return the square of the input number', () => {
-    expect(square([
+  it('should return the computed of the input array', () => {
+    expect(computed([
     	[0,0,0],
     	[0,0,0],
     	[0,0,0]
     	]).toString()).equal('0,0,0,0,0,0,0,0,0');
   });
-  it('should return the square of the input number', () => {
-    expect(square([
+  it('should return the computed of the input array', () => {
+    expect(computed([
     	[0,0,0],
     	[0,0,0],
     	[0,1,0],
     	[0,1,1]
     	]).toString()).equal('0,0,0,0,0,0,0,1,1,0,1,1');
   });
-  it('should return the square of the input number', () => {
-    expect(square([
+  it('should return the computed of the input array', () => {
+    expect(computed([
     	[1,1,1,1,1],
     	[1,0,0,0,1],
     	[1,0,0,0,1],

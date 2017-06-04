@@ -1,4 +1,4 @@
-function square(arr) {
+function computed(arr) {
   //console.log(_.range(0, n));
 var countArr = [];
 for (var i = 0; i < arr.length; i++) {
@@ -56,5 +56,5 @@ return countArr;
 
 };
 module.exports =  {
-  square
+  computed
 };
